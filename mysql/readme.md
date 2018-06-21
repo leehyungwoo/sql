@@ -2,30 +2,35 @@
 
 C:\Bitnami\wampstack-7.0.30-0\mysql\bin> .\mysql.exe -uroot -p;
 
+```
 Enter password: ******
-
+```
 <br/>
 
 # DB(스키마)생성
+```
 mysql> CREATE DATABASE 데이터베이스스키마 이름;
 
 mysql> SHOW DATABASES;  
-
+```
 <br/>
 
 # DB 사용
+```
 mysql> USE 데이터베이스스키마 이름;
-
+```
 <br/>
 
 # 테이블 보기
+```
 mysql> SHOW TABLES; 
-
+```
 
 <br/>
 
 
 # tabel 및 데이터 생성 
+```
 CREATE TABLE `author` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(20) NOT NULL,
@@ -68,7 +73,9 @@ INSERT INTO `topic` VALUES (5,'MongoDB','MongoDB is ...','2018-01-30 12:31:03',1
 <br/>
 <br/>
 <br/>
+```
 # mysql 나가기
 mysql나가기:  exit
+```
 mysql> exit
-
+```
