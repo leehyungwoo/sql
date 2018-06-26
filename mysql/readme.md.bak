@@ -22,7 +22,7 @@ CREATE USER '유저이름'@'localhost' IDENTIFIED BY '비밀번호';
 ```
 <br/>
 
-# table권한을 user에게 부여
+# table권한을 user에게주겠다는 명령어
 
 GRANT ALL PRIVILEGES ON 테이블이름.* TO '유저이름'@'%'
 

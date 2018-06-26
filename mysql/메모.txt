@@ -1,0 +1,107 @@
+스키마 - 데이터들을 폴더단위로 그룹핑(데이터베이스라고표현함)
+
+
+
+
+	
+
+mysql -uroot -p
+
+CREATE DATABASE opentutorials;  (스키마만들기)   DROP DATABASE opentutorials;(스키마 삭제하기)
+
+	;(스키마들 보기)
+
+USE opentutorials;(스키마 사용하기)
+
+
+<SQL>
+Structured : 구조화(테이블형식)
+Query: ~~해줘 하는 질의요청
+Language: 언어
+
+
+row(열)
+col(행) =데이터의 타입
+
+
+
+
+
+ CREATE TABLE topic(
+     id INT(11) NOT NULL AUTO_INCREMENT,
+     title VARCHAR(100) NOT NULL,
+    description TEXT NULL,
+    created DATETIME NOT NULL,
+     author VARCHAR(30) NULL,
+     profile VARCHAR(100) NULL,
+    PRIMARY KEY(id)
+);
+
+
+
+
+
+id INT(11) NOT NULL AUTO_INCREMENT,
+(id:데이터 인덱스)
+(INT 숫자(length)
+NOT NULL :비면안됨
+AUTO_INCREMENT: id추가때마다 1씩 증가
+
+
+
+title VARCHAR(100) NOT NULL,       VARCHAR =variable Chartset =변하는 문자열
+
+
+  -> PRIMARY KEY(id)   가장 중요한 키값, 중복이면안돼
+
+
+
+Create
+Read
+Update
+Delete
+
+
+테이블보기
+
+SHOW  TABLES
+
+
+
+
+
+
+
+
+
+
+
+use ajax;           //ajax사용
+select * from test;      //test 데이터 보기
+
+select * from test where pk=2;  // pk2인 test를 선택 ( 삭제나 수정시 항시 확인하는 습관이 중요함)
+
+update test set 
+name = 'Lee'
+where pk=2;
+
+select * from test where pk=6;                //pk가 6인것을 확인
+delete from test where pk=6;                //pk가 6인것을 삭제
+select * from test;                        //test데이터 확인하면 6이 삭제된것을 볼수있음.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
